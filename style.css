@@ -1,0 +1,151 @@
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+a:visited{color: #596D48;}
+a {text-decoration: none;color: #596D48;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+input {
+    width: 240px;
+    height: 20px;
+    border: 1px solid #c0cad5;
+    border-radius: 5px;
+    
+}
+
+label ,.part3{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+}
+
+.part1 ,h2 {
+    font-family: "Kanit", sans-serif; 
+    font-weight: 500;
+}
+
+html ,body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 1320px;
+    height: 100%;
+    display: flex;
+}
+
+form {
+    flex: 1;
+}
+
+.image {
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+
+img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.part1 {
+    background-color: #F9FAFB;
+    flex: 1;
+    font-size: 25px;
+    line-height: 1.0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 190px 0 40px;
+}
+
+
+.part2 {
+    background-color: #FFFFFF;
+    flex: 1;
+    padding: 0 240px 0 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px black;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    gap: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.part3 {
+    padding-top: 35px;
+    background-color: #F9FAFB;
+    flex: 1;
+    padding-left: 40px;
+}
+
+.btn {
+    height: 45px;
+    width: 210px;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+}
