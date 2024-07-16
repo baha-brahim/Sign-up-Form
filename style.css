@@ -1,3 +1,11 @@
+input {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
 .kanit-medium {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
@@ -22,7 +30,7 @@ button {
     -moz-appearance: none;
     appearance: none;
 }
-
+input:focus {border: 1px solid #c0cad5;}
 a:visited{color: #596D48;}
 a {text-decoration: none;color: #596D48;}
 input[type="number"]::-webkit-outer-spin-button,
@@ -41,7 +49,8 @@ input {
     height: 20px;
     border: 1px solid #c0cad5;
     border-radius: 5px;
-    
+    font-size: 17px;    
+    padding: 2px;
 }
 
 label ,.part3{
@@ -72,13 +81,9 @@ body {
     display: flex;
 }
 
-form {
-    flex: 1;
-}
 
 .image {
     width: 100%; 
-    max-width: 600px; 
     margin: 0 auto; 
     overflow: hidden; 
 }
@@ -91,8 +96,13 @@ img {
 
 
 form {
+    flex: 1;
+}
+
+.container-all {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .part1 {
@@ -148,4 +158,51 @@ form {
     border-radius: 5px;
     background-color: #596D48;
     color: white;
+}
+
+input[type="password"] {
+    border: 1px solid #c0cad5;
+}
+
+input[type="password"]:invalid:focus {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+
+.logo  {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 458px;
+    z-index: 2;
+}
+
+.background-img {
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 0;
+}
+
+.band {
+    position: absolute;
+    width: 498px;
+    height: 135px;
+    background-color: rgba(0, 0, 0, .5);
+    top: 200px;
+    z-index: 1;
+}
+
+#passConfError {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.input-invalid {
+    border: 1px solid red;
 }
